@@ -21,19 +21,110 @@ main{
     width: 100%;
     height: 90%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
     width: 100%;
     height: 9.7%;
-    box-shadow: 0 0.5px 1px grey;
+    box-shadow: 0 0.5px 2px rgb(168, 167, 167);
     display: flex;
 }
 
 #logo{
+    height: 100%;
     font-family: Krona One, sans-serif;
     display: flex;
     font-size: 1.5rem;
     color: #264653;
     margin-left: 2%;
+    align-items: center;
+}
+
+#menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+#intro{
+    width: 93%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end ;
+    position: relative;
+    margin-top: 9%;
+}
+
+#texto{
+    width: 53%;
+    height: 61%;
+    background-color: #A35139;
+    clip-path: polygon(
+    0 0, 
+    calc(90% - 8px) 0, 
+    calc(100% - 8px) 10%, 
+    calc(100% - 8px) calc(100% - 8px), 
+    10% calc(100% - 8px), 
+    0 calc(90% - 8px)
+  );
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    font-family: Jost, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: justify;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#imagem {
+    width: 55%;
+    height: 100%;
+    clip-path: polygon(0 0, 80% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+    object-fit: scale-down;
+}
+
+#imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+#navegacao{
+    width: 77%;
+    height: 12%;
+    display: flex;
+    margin-top: 5%;
+}
+
+#botoes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pages{
+    width: 32%;
+    height: 100%;
+    background-color: #264653;
+    font-family: Jost, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    border: 0;
+    clip-path: polygon(0 0, 80% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+}
+
+#barra_inf{
+    width: 100%;
+    height: 0.5%;
+    background-color: #A35139;
+    position: fixed;
+    bottom: 0;
 }
